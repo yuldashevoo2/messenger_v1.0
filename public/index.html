@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mini Messenger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Mini Messenger</h2>
+      <div class="user-setup">
+        <input id="usernameInput" placeholder="Ismingizni kiriting" />
+        <button id="joinBtn">Kirish</button>
+      </div>
+      <div id="systemMessages" class="system"></div>
+    </aside>
+
+    <main class="chat">
+      <div id="messages" class="messages"></div>
+      <div id="typing" class="typing"></div>
+
+      <form id="msgForm" class="msg-form">
+        <input id="msgInput" autocomplete="off" placeholder="Xabar yozing..." />
+        <button type="submit">Yuborish</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- Socket.IO client (CDN) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

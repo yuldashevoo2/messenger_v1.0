@@ -24,3 +24,18 @@ body { background:#f3f4f6; color:#111; height:100vh; display:flex; align-items:c
 .msg-form button { padding:10px 14px; border-radius:8px; border:none; background:#10b981; color:white; cursor:pointer; }
 
 .typing { height:18px; font-size:13px; color:#444; padding-left:4px; }
+
+
+
+
+/* Telefon ekranlari uchun */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .chat-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
